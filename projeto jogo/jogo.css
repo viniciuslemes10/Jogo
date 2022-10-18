@@ -1,0 +1,135 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #051D40;
+	padding: 20px 0;
+}
+
+.home {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0 0 15px;
+	line-height: 1.5;
+}
+
+nav a {
+	color: #000000;
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+img {
+	width: 200px;
+	padding: 15px 15px 20px 15px;
+}
+
+.principal {
+	display: inline-block;
+	position: relative;
+	left: 80%;
+	top: 20%;
+	text-decoration: none;
+	color: white;
+}
+
+.principal:hover {
+	color: #DAA520;
+	text-decoration: underline;
+}
+
+main {
+	width: 100%;
+	text-align: center;
+	padding: 0 0;
+}
+
+.jogos-diversao {
+	text-align: center;
+	font-size: 24px	;
+	margin: 0 0 20px 0;
+	color: rgba(0,0,0,0.3);
+	background: linear-gradient(#F0F8FF, #FFFFFF);
+}
+
+.descricao-jogo {
+	text-decoration: none;
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px 0 20px 0;
+	padding: 20px 0 10px 0;
+	color: black;
+}
+
+.img-jogo {
+	width: auto;
+	display: block;
+	position: relative;
+	left: 450px;
+	margin: 32px 0px 32px 0px;
+	border: 2px solid #000000;
+	border-radius: 20px;
+	opacity: 1;
+}
+
+.img-jogo:hover {
+	opacity: 0.6;
+	transition: 400ms;
+}
+
+.jogo {
+	width: 300px;
+	display: inline-block;
+	font-weight: bold;
+	padding: 30px 0px;
+	margin: 10px 0;
+	text-decoration: none;
+	box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #051D40;
+    color: white;
+}
+
+.jogo:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	width: auto;
+	text-align: center;
+	background: #051D40;
+	padding: 60px 0;
+	margin: 40px 0 0 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 22px;
+	margin: 20px 0;
+}
+

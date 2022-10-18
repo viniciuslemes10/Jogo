@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href="jogo1.css">
+    <title>Jogo Desenha</title>
+</head>
+<body>
+    <header>
+        <h1>Jogo desenha com cores</h1>
+    </header>
+    <main>
+        <p>Desenhe o que quizer e se divirta:&#128512;</p>
+    </main>
+    <canvas width="1000" height="800"></canvas>
+<br>
+<div class="cores">
+    Escolha uma cor <input type="color" class="escolha-cor" value=" Escolha uma cor">
+    <p><a href="index.html" class="menu">CLIQUE PARA VOLTAR</a></p>
+</div>
+
+<script>
+
+    var input = document.querySelector("input");
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = "white";
+    pincel.fillRect(0, 0, 1000, 800);
+
+    var desenha = false;
+    input.focus();
+
+    function desenhaCirculo(evento) {
+
+        if(desenha) {
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = input.value;
+            pincel.beginPath();
+            pincel.arc(x, y, 5, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(x + ',' + y);
+
+        
+        input.focus();
+    }
+
+    tela.onmousemove = desenhaCirculo;
+
+    function habilitaDesenhar() {
+
+        desenha = true;
+    }
+
+    function desabilitaDesenhar() {
+
+        desenha = false;
+    }
+
+    tela.onmousedown = habilitaDesenhar;
+
+    tela.onmouseup = desabilitaDesenhar;
+
+</script>
+ 
+    <footer>
+        <img src="study.png" class="final">
+        <p class="copyright">&copy; Jogos Diversão</p>
+    </footer>  
+</body>
+</html>

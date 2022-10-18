@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #051D40;
+	padding: 5px;
+}
+
+.descricao {
+	position: relative;
+	width: 640px;
+	margin: 0 auto;	
+}
+
+nav {
+	position: absolute;
+	top: 85px;
+	right: 115px;
+}
+
+.titulo {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0;
+	margin: 15px 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+img {
+	width: 135px;
+	padding: 17px 15px 20px 15px;
+}
+
+.principal {
+	display: inline-block;
+	position: relative;
+	left: 80%;
+	top: 20%;
+	text-decoration: none;
+	color: white;
+}
+
+.principal:hover {
+	color: #DAA520;
+	text-decoration: underline;
+}
+
+.descricao-jogos {	
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(#F0F8FF, #FFFFFF);
+}
+
+main {
+	width: 100%;
+	text-align: center;
+	padding: 0 0;
+}
+
+.img-jogo{
+	width: 500px;
+	border: 1px #000000 solid;
+	border-radius: 20px;
+	margin: 0 0 20px 0;
+	padding: 10px 10px;
+}
+
+.texto-um {
+	width: 600px;
+	position: relative;
+	left: 35%; 
+}
+
+.texto-dois {
+	width: 600px;
+	position: relative;
+	left: 35%;
+	margin: 0 0 20px 0;
+	padding: 10px 0;
+}
+
+.menu {
+	width: 300px;
+	display: inline-block;
+	padding: 10px 0px;
+	margin: 5px 0;
+	text-decoration: none;
+	box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #051D40;
+    color: white;
+}
+
+.menu:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	width: auto;
+	text-align: center;
+	background: #051D40;
+	padding: 60px 0;
+	margin: 40px 0 0 0;
+}
+
+.final {
+	width: 150px;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 22px;
+	margin: 20px 0;
+}
